@@ -23,12 +23,14 @@ namespace WindowsFormsApplication
         private void button1_Click(object sender, EventArgs e)
         {
             count++;
+            progressBar1.PerformStep();
             if (count == countTo)
             {
                 MessageBox.Show("Done");
                 textBox1.Text = "0";
+                progressBar1.Value = 0;
             }
-            
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -38,6 +40,16 @@ namespace WindowsFormsApplication
                 MessageBox.Show("Please enter a valid number");
                 textBox1.Text = "";
             }
+            else
+            {
+                progressBar1.Maximum = countTo;
+                progressBar1.Step = 1;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            progressBar1.Visible = !progressBar1.Visible;
         }
     }
 }
