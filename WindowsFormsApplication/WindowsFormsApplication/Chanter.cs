@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication
 {
-    public partial class Form1 : Form
+    public partial class Chanter : Form
     {
         private int count = 0;
         private int countTo = 0;
 
-        public Form1()
+        public Chanter()
         {
             InitializeComponent();
         }

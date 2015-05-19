@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication
 {
-    partial class Form1
+    partial class Chanter
     {
         /// <summary>
         /// Required designer variable.
