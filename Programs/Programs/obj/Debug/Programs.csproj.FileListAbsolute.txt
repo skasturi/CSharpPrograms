@@ -1,0 +1,6 @@
+D:\code\github\CSharpPrograms\Programs\Programs\bin\Debug\Programs.exe.config
+D:\code\github\CSharpPrograms\Programs\Programs\obj\Debug\Programs.csprojResolveAssemblyReference.cache
+D:\code\github\CSharpPrograms\Programs\Programs\bin\Debug\Programs.exe
+D:\code\github\CSharpPrograms\Programs\Programs\bin\Debug\Programs.pdb
+D:\code\github\CSharpPrograms\Programs\Programs\obj\Debug\Programs.exe
+D:\code\github\CSharpPrograms\Programs\Programs\obj\Debug\Programs.pdb
