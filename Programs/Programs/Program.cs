@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataStructures;
 
 namespace Programs
 {
@@ -10,14 +11,17 @@ namespace Programs
     {
         public static void Main(string[] args)
         {
-            // FindNthMagicNumber
-            TestFindNthMagicNumber();
+            //// FindNthMagicNumber
+            //TestFindNthMagicNumber();
 
-            // FindNotRepeatedNumber
-            TestFindNotRepeatedNumber();
+            //// FindNotRepeatedNumber
+            //TestFindNotRepeatedNumber();
 
-            // FindOnlyOnceRepeatedNumberAllOthersRepeatedThrice
-            TestFindOnlyOnceRepeatedNumberAllOthersRepeatedThrice();
+            //// FindOnlyOnceRepeatedNumberAllOthersRepeatedThrice
+            //TestFindOnlyOnceRepeatedNumberAllOthersRepeatedThrice();
+
+            // CountBSTSubtreesLyingInaGivenRange
+            TestCountBSTSubtreesLyingInaGivenRange();
         }
 
         private static void TestFindNthMagicNumber()
@@ -37,6 +41,12 @@ namespace Programs
         private static void TestFindOnlyOnceRepeatedNumberAllOthersRepeatedThrice()
         {
             Console.WriteLine(FindOnlyOnceRepeatedNumberAllOthersRepeatedThrice.Find(new int[] { 1, 3, 4, 1, 3, 4, 1, 3, 4, 2, 11, 4, 4, 2, 2, 4 }));   // 11 is expected            
+        }
+
+        private static void TestCountBSTSubtreesLyingInaGivenRange()
+        {
+            Console.WriteLine(CountBSTSubtreesLyingInaGivenRange.Run(new BinarySearchTree(new int[] { 10, 5, 1, 50, 40, 100 }), 5, 45));
+            Console.WriteLine(CountBSTSubtreesLyingInaGivenRange.Run(new BinarySearchTree(new int[] { 10, 5, 1, 50, 40, 100 }), 1, 45));
         }
     }
 }
