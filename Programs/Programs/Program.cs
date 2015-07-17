@@ -21,7 +21,10 @@ namespace Programs
             //TestFindOnlyOnceRepeatedNumberAllOthersRepeatedThrice();
 
             // CountBSTSubtreesLyingInaGivenRange
-            TestCountBSTSubtreesLyingInaGivenRange();
+            //TestCountBSTSubtreesLyingInaGivenRange();
+
+            // RemoveHalfNodesInaBST
+            TestRemoveHalfNodesInaBST();
         }
 
         private static void TestFindNthMagicNumber()
@@ -47,6 +50,11 @@ namespace Programs
         {
             Console.WriteLine(CountBSTSubtreesLyingInaGivenRange.Run(new BinarySearchTree(new int[] { 10, 5, 1, 50, 40, 100 }), 5, 45));
             Console.WriteLine(CountBSTSubtreesLyingInaGivenRange.Run(new BinarySearchTree(new int[] { 10, 5, 1, 50, 40, 100 }), 1, 45));
+        }
+
+        private static void TestRemoveHalfNodesInaBST()
+        {
+            Console.WriteLine(RemoveHalfNodesInaBST.Run(new BinarySearchTree(new int[] { 10, 5, 1, 50, 40, 100, 120, 150})));
         }
     }
 }

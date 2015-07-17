@@ -45,8 +45,10 @@
     <Compile Include="FindNotRepeatedNumber.cs" />
     <Compile Include="FindNthMagicNumber.cs" />
     <Compile Include="FindOnlyOnceRepeatedNumberAllOthersRepeatedThrice.cs" />
+    <Compile Include="KthLargestElementInBST.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveHalfNodesInaBST.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
