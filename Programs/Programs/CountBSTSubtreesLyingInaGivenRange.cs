@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DataStructures;
 
 namespace Programs
@@ -29,7 +25,7 @@ namespace Programs
             if (node == null)
             {
                 return new Tuple<int, bool>(0, true);
-            }            
+            }
             else
             {
                 var left = IsSubTreeRange(node.left, low, high);

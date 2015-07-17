@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Programs
+﻿namespace Programs
 {
     /// <summary>
     /// Source: http://www.careercup.com/question?id=7902674

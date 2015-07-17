@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Programs
+﻿namespace Programs
 {
     /// <summary>
     /// Find the number that has not been repeated in the given array

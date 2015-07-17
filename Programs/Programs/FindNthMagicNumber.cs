@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Programs
 {
@@ -39,7 +35,9 @@ namespace Programs
                     try
                     {
                         nThMagicNumber = checked(nThMagicNumber + (int)Math.Pow(5, pow));
-                    } catch(System.OverflowException e) {
+                    }
+                    catch (OverflowException)
+                    {
                         Console.WriteLine("Overflow caught");
                     }
                 }

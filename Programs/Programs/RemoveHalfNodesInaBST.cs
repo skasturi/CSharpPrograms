@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataStructures;
+﻿using DataStructures;
 
 namespace Programs
 {
@@ -24,7 +19,7 @@ namespace Programs
 
         private static void replaceHalfNodes(BSTNode node)
         {
-            if(node == null) 
+            if (node == null)
             {
                 return;
             }
@@ -36,7 +31,7 @@ namespace Programs
             {
                 node.left = FindNonHalfNode(node.left);
             }
-            
+
             if (IsHalfNode(node.right))
             {
                 node.right = FindNonHalfNode(node.right);

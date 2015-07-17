@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DataStructures;
 
 namespace Programs
@@ -24,7 +20,10 @@ namespace Programs
             //TestCountBSTSubtreesLyingInaGivenRange();
 
             // RemoveHalfNodesInaBST
-            TestRemoveHalfNodesInaBST();
+            //TestRemoveHalfNodesInaBST();
+
+            // MaxSet
+            //TestMaxSet();
         }
 
         private static void TestFindNthMagicNumber()
@@ -54,7 +53,12 @@ namespace Programs
 
         private static void TestRemoveHalfNodesInaBST()
         {
-            Console.WriteLine(RemoveHalfNodesInaBST.Run(new BinarySearchTree(new int[] { 10, 5, 1, 50, 40, 100, 120, 150})));
+            Console.WriteLine(RemoveHalfNodesInaBST.Run(new BinarySearchTree(new int[] { 10, 5, 1, 50, 40, 100, 120, 150 })));
+        }
+
+        private static void TestMaxSet()
+        {
+            Console.WriteLine(string.Join(",", MaxSet.Run(new int[] { 1, 2, 2, -7, 2, 3, 2 })));
         }
     }
 }
