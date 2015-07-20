@@ -24,6 +24,22 @@ namespace Programs
 
             // MaxSet
             //TestMaxSet();
+
+            //Wave
+            //TestWave();
+
+            //MaxSum
+            TestMaxSum();
+        }
+
+        private static void TestMaxSum()
+        {
+            Console.WriteLine(MaxSum.Run(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }));
+        }
+
+        private static void TestWave()
+        {
+            Console.WriteLine(string.Join(",", WaveArray.Run(new int[] { 1, 2, 3, 4 })));
         }
 
         private static void TestFindNthMagicNumber()
@@ -58,7 +74,10 @@ namespace Programs
 
         private static void TestMaxSet()
         {
-            Console.WriteLine(string.Join(",", MaxSet.Run(new int[] { 1, 2, 2, -7, 2, 3, 2 })));
+            //Console.WriteLine(string.Join(",", MaxSet.Run(new int[] { 1, 2, 2, -7, 2, 3, 2 })));
+            //Console.WriteLine(string.Join(",", MaxSet.Run(new int[] { 0, 0, -1, 0 })));
+            Console.WriteLine(string.Join(",", MaxSet.Run(new int[] { 1967513926, 1540383426, -1303455736, -521595368 })));
         }
     }
 }
+

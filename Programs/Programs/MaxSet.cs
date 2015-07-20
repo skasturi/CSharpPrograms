@@ -10,15 +10,16 @@ namespace Programs
     {
         public static int[] Run(int[] array)
         {
-            int maxSum = -1, startIndex = -1, endIndex = -1;
-            int presentSum = 0, presentStartIndex = -1, presentEndIndex = -1;
+            long maxSum = -1, presentSum = -1;
+            int startIndex = -1, endIndex = -1;
+            int presentStartIndex = -1, presentEndIndex = -1;
             bool reset = true;
             for (int i = 0; i < array.Length; ++i)
             {
                 if (array[i] < 0)
                 {
                     reset = true;
-                    if ((maxSum < presentSum && presentSum != 0 && presentStartIndex != -1) || (maxSum == presentSum && (endIndex - startIndex) > (presentEndIndex - presentStartIndex)))
+                    if ((maxSum < presentSum && presentSum != -1 && presentStartIndex != -1) || (maxSum == presentSum && (endIndex - startIndex) < (presentEndIndex - presentStartIndex)))
                     {
                         maxSum = presentSum;
                         startIndex = presentStartIndex;
@@ -39,7 +40,7 @@ namespace Programs
                 }
             }
 
-            if ((maxSum < presentSum && presentSum != 0 && presentStartIndex != -1) || (maxSum == presentSum && (endIndex - startIndex) > (presentEndIndex - presentStartIndex)))
+            if ((maxSum < presentSum && presentSum != 0 && presentStartIndex != -1) || (maxSum == presentSum && (endIndex - startIndex) < (presentEndIndex - presentStartIndex)))
             {
                 maxSum = presentSum;
                 startIndex = presentStartIndex;
@@ -55,7 +56,7 @@ namespace Programs
                 }
                 return result;
             }
-            return null;
+            return new int[0];
         }
     }
 }

@@ -46,9 +46,11 @@
     <Compile Include="FindNthMagicNumber.cs" />
     <Compile Include="FindOnlyOnceRepeatedNumberAllOthersRepeatedThrice.cs" />
     <Compile Include="MaxSet.cs" />
+    <Compile Include="MaxSum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveHalfNodesInaBST.cs" />
+    <Compile Include="WaveArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

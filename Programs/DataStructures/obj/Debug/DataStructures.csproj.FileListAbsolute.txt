@@ -1,5 +1,0 @@
-D:\code\github\CSharpPrograms\Programs\DataStructures\bin\Debug\DataStructures.dll
-D:\code\github\CSharpPrograms\Programs\DataStructures\bin\Debug\DataStructures.pdb
-D:\code\github\CSharpPrograms\Programs\DataStructures\obj\Debug\DataStructures.csprojResolveAssemblyReference.cache
-D:\code\github\CSharpPrograms\Programs\DataStructures\obj\Debug\DataStructures.dll
-D:\code\github\CSharpPrograms\Programs\DataStructures\obj\Debug\DataStructures.pdb
