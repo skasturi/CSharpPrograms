@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    public class GraphAsAdjacencyList
+    public class GraphAsAdjacencyMatrix
     {
         
     }

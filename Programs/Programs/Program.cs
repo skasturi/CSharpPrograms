@@ -29,7 +29,18 @@ namespace Programs
             //TestWave();
 
             //MaxSum
-            TestMaxSum();
+            //TestMaxSum();
+
+            //MinCostToReachStation
+            TestMinCostToReachDestinationTrain();
+        }
+
+        private static void TestMinCostToReachDestinationTrain()
+        {
+            int[,] cost = new int[,]{
+                {0,15,80,90}, {Int32.MaxValue, 0,40,50}, {Int32.MaxValue,Int32.MaxValue,0,70}, {Int32.MaxValue,Int32.MaxValue,Int32.MaxValue,0}
+            };
+            Console.WriteLine(MinCostToReachDestinationTrain.Run(cost));
         }
 
         private static void TestMaxSum()
