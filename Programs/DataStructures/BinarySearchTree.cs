@@ -4,6 +4,10 @@
     {
         public BSTNode root;
 
+        /// <summary>
+        /// Create a BinarySearchTree
+        /// </summary>
+        /// <param name="elements"></param>
         public BinarySearchTree(int[] elements)
         {
             foreach (int element in elements)
@@ -12,6 +16,10 @@
             }
         }
 
+        /// <summary>
+        /// Get inorder traversal of the given tree
+        /// </summary>
+        /// <returns>Returns a comma seperated string contains the integers</returns>
         public string getInorderTraversal()
         {
             if (root == null)
@@ -35,8 +43,6 @@
                 return getInorderTraversal(node.left) + " " + node.value + " " + getInorderTraversal(node.right);
             }
         }
-
-
 
         /// <summary>
         /// Insert into Binary search tree
