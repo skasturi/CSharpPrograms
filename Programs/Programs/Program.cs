@@ -32,9 +32,19 @@ namespace Programs
             //TestMaxSum();
 
             //MinCostToReachStation
-            TestMinCostToReachDestinationTrain();
+            //TestMinCostToReachDestinationTrain();
+
+            //ElementAppearingOnceInASortedArray
+            TestElementAppearingOnceInASortedArray();
         }
 
+        private static void TestElementAppearingOnceInASortedArray()
+        {
+            int[] array = new int[]{ 1, 1, 3, 3, 4, 5, 5, 7, 7, 8, 8 };
+            Console.WriteLine(ElementAppearingOnceInASortedArray.GetSingleElement(array));
+            Console.WriteLine(ElementAppearingOnceInASortedArray.GetSingleElement(new int[] { 1, 1, 2, 4, 4, 5, 5, 6, 6 }));
+        }
+        
         private static void TestMinCostToReachDestinationTrain()
         {
             int[,] cost = new int[,]{
